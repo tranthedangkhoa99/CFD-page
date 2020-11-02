@@ -1,0 +1,167 @@
+.register-form-wrapper{
+    width: 800px;
+    padding-top: 75px;
+    padding-bottom: 125px;
+    margin: 0 auto;
+    text-align:center;
+    p{
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
+    }
+    h5{
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 70px;
+        text-transform: capitalize;
+        word-spacing: -20px;
+        margin-bottom: 60px;
+    }
+    .form__container{
+        position: relative;
+        width: 100%;
+        background: white;
+        height: 700px;
+        form{
+            height: 90%;
+            padding-top: 45px;
+            ::-webkit-input-placeholder { /* Edge */
+                font-size: 16px;
+                line-height: 22px;
+                color: rgba(0, 0, 0, 0.5);
+            }
+            
+            :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                font-size: 16px;
+                line-height: 22px;
+                color: rgba(0, 0, 0, 0.5);
+            }
+            
+            ::placeholder {
+                font-size: 16px;
+                line-height: 22px;
+                color: rgba(0, 0, 0, 0.5);
+            }
+            input[type=text], select, textarea {
+                width: 100%;
+                height: 60px;
+                border: 1px solid #ccc;
+                padding: 5px;
+                resize: none;
+            }
+            
+            label {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+            }
+            .col-25 {
+                float: left;
+                width: 25%;
+                margin-top: 6px;
+            }
+            
+            .col-75 {
+                float: left;
+                width: 60%;
+                margin-top: 6px;
+            }
+            
+            /* Clear floats after the columns */
+            .row{
+                margin-bottom: 20px;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+                }
+            }
+        }
+        .button-submit{
+            height: 60px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            input[type=submit] {
+                background-color: $highlight-color;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                cursor: pointer;
+                height: 100%;
+                width: 100%;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            input[type=submit]:hover {
+                background-color: rgb(30, 139, 139);
+            }
+        }
+    }
+}
+
+.register-success-wrapper{
+    width: 800px;
+    height: 350px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 140px;
+    h5{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 70px;
+        margin-bottom: 50px;
+        text-transform: capitalize;
+        word-spacing: -20px;
+    }
+    .success__letter{
+        padding: 40px 40px 0 40px;
+        background: white;
+        text-align: center;
+        height: 225px;
+        position: relative;
+        h6{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+        .success__button{
+            width: 100%;
+            color: white;
+            text-transform: uppercase;
+            background: $highlight-color;
+            text-decoration: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            text-align: center;
+            height: 60px;
+            display: grid;
+            place-items: center;
+        }
+    }
+}

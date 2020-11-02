@@ -1,0 +1,85 @@
+@import 'pages/home';
+@import 'pages/account';
+@import 'pages/register';
+@import 'pages/course';
+@import 'pages/cfdteam.scss';
+@import 'pages/api.scss';
+
+
+@import 'components/header';
+@import 'components/footer';
+@import 'components/headerLogin';
+
+@import 'base/font';
+@import 'base/responsive';
+
+@import 'abstracts/variable';
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+input:focus{
+    outline: 1px solid $highlight-color;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $highlight-color; 
+    border-radius: 10px;
+}
+
+.red::-webkit-input-placeholder {
+    color: red
+}
+.tick{
+    &:before{
+        content: "";
+        background: red;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+    }
+}
+
+.login-form{
+    width: 1200px;
+    margin: 0 auto;
+    form{
+        width: 70%;
+        background:white;
+        .row{
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            margin-bottom: 20px;
+            .col-25{
+                width: 25%;
+            
+            }
+            .col-75{
+                width: 75%;
+                input{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
+            button{
+                width: 100%;
+            }
+        }
+    }
+}

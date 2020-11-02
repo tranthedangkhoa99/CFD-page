@@ -1,0 +1,12 @@
+.students-card-wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+    .team-students{
+        background-color:white;
+        .student__card-text{
+            padding: 20px;
+        }
+    }
+    
+}

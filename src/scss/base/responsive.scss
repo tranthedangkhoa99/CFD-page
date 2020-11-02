@@ -1,0 +1,98 @@
+@media screen and(max-width: 768px) {
+    .header-wrapper{
+        position: fixed;
+        z-index: 9;
+        width: 100vw;
+        header {
+        width: 100%;
+        .header__nav {
+            display: none;
+        }
+
+        // .header__user-info{
+        //     .info__hamburger-menu{
+        //         position: fixed;
+        //     }
+        // }
+    }
+    }
+
+    .home-course {
+        .course__about {
+            width: 100%;
+
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+        .course__online {
+            width: 100%;
+
+            .course__online-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    section.home-offline-course {
+        height: 100%;
+
+        .course__online {
+            width: 100%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            .course__online-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+    .home-video{
+        .video__container{
+            width: 100% !important;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    footer {
+        .footer-content {
+            width: 100%;
+            flex-direction: column;
+            padding: 20px;
+
+            .footer-content__left {
+                h4 {
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+
+                .social {
+                    img {
+                        padding: 20px;
+                    }
+                }
+            }
+
+            .footer-content__right {
+                .footer__nav {
+                    font-size: 13px;
+                    align-items: center;
+                }
+            }
+        }
+
+        .footer__bottom {
+            .footer__bottom__content {
+                width: 100%;
+            }
+        }
+    }
+}
